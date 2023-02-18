@@ -1,0 +1,81 @@
+//fonts
+
+// Regular, weight: 400
+@font-face {
+  font-family: "Gill Sans";
+  src: url(fonts/gill-sans.otf) format("otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+// 700 bold
+@font-face {
+  font-family: "Gill Sans";
+  src: url(fonts/gill-sans.otf) format("otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+// italic
+@font-face {
+  font-family: "Gill Sans";
+  src: url(fonts/gill-sans-italic.otf) format("otf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+// light
+@font-face {
+  font-family: "Gill Sans";
+  src: url(fonts/gill-sans-light.otf) format("otf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+// downloaded via Adobe CC
+//transferred per https:github.com/echeno/adobe-font-extractor */
+@font-face {
+  font-family: "Proxima Nova Extra Condensed Thin";
+  src: url(fonts/proxima-nova-extra-condensed-thin.otf) format("otf");
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* typography */
+$body-font-family: "Gill Sans, sans-serif";
+$title-font-family: "Proxima Nova Extra Condensed Thin, sans-serif";
+
+//TODO: partial underline on header tags
+/*
+  Methods found so far are rather hacky. Linear gradient probably best method, but need to look into this further.
+
+*/
+/* font sizes may need to be reduced on mobile */
+
+$base-font-size-in-px: 16;
+// use rem so scales with browser zoom (accessibility)
+//TODO: convert font-sizes or a generic sizing to mixin
+.font-size-80 {
+  font-size: calc((60 / $base-font-size-in-px) * 1rem);
+}
+
+.font-size-60 {
+  font-size: calc((60 / $base-font-size-in-px) * 1rem);
+}
+
+.font-size-30 {
+  font-size: calc((30 / $base-font-size-in-px) * 1rem);
+}
+
+%title-shared {
+  font-family: $title-font-family;
+  margin-bottom: 2.375rem;
+}
+
+.title {
+  @extend %title-shared;
+}
+
+.upper {
+  text-transform: uppercase;
+}

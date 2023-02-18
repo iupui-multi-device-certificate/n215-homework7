@@ -1,0 +1,340 @@
+/* reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+  skip setting html and body height for now
+  my portfolio site is responsive and works fine without these set
+*/
+@font-face {
+  font-family: "Gill Sans";
+  src: url(fonts/gill-sans.otf) format("otf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gill Sans";
+  src: url(fonts/gill-sans.otf) format("otf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gill Sans";
+  src: url(fonts/gill-sans-italic.otf) format("otf");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gill Sans";
+  src: url(fonts/gill-sans-light.otf) format("otf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Extra Condensed Thin";
+  src: url(fonts/proxima-nova-extra-condensed-thin.otf) format("otf");
+  font-weight: 100;
+  font-style: normal;
+}
+/* typography */
+/*
+  Methods found so far are rather hacky. Linear gradient probably best method, but need to look into this further.
+
+*/
+/* font sizes may need to be reduced on mobile */
+.font-size-80 {
+  font-size: 3.75rem;
+}
+
+.font-size-60 {
+  font-size: 3.75rem;
+}
+
+.font-size-30 {
+  font-size: 1.875rem;
+}
+
+.tour-teaser figure figcaption .figure-title, .title {
+  font-family: "Proxima Nova Extra Condensed Thin, sans-serif";
+  margin-bottom: 2.375rem;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+body {
+  font-family: "Gill Sans, sans-serif";
+  /* base font size */
+  font-size: 1rem;
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+  font-weight: normal;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  min-height: 100%;
+  /* min-height: 100vh; */
+}
+
+.btn {
+  background-color: #79addc;
+  padding: 0.625rem 1.375rem;
+  border-radius: 1.25rem;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: #79addc;
+  margin-top: 12.5rem;
+  height: 100px;
+}
+footer .footer-content {
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .logo {
+  font-size: 1.25rem;
+  color: #fff;
+  padding-top: 30px;
+  border: solid thin;
+}
+footer .copyright {
+  font-size: 0.75rem;
+  color: #fff;
+}
+footer .social {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1.375rem;
+}
+
+@media only screen and (max-width: 800px) {
+  footer .copyright {
+    display: none;
+  }
+}
+/*  from bootstrap */
+/* prevents overlap issue have w/ fixed */
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+nav {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+  height: 90px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000;
+  border-bottom: 1px solid;
+  margin-bottom: 3rem;
+}
+nav .logo {
+  font-size: 1.25rem;
+  padding-top: 30px;
+  border: solid thin;
+}
+nav .links {
+  color: #79addc;
+}
+nav .links a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #000;
+}
+
+@media only screen and (max-width: 800px) {
+  nav {
+    text-align: center;
+  }
+  nav .logo {
+    display: none;
+  }
+  nav .links {
+    justify-content: center;
+  }
+}
+.tour-teasers {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, minmax(236px, 1fr));
+  gap: 2rem;
+}
+
+.tour-teaser {
+  justify-self: center;
+}
+.tour-teaser figure {
+  position: relative;
+  width: 236px;
+  height: 304px;
+  background: #000;
+}
+.tour-teaser figure img {
+  opacity: 0.5;
+}
+.tour-teaser figure figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+}
+.tour-teaser figure figcaption .figure-title {
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 800px) {
+  .tour-teasers {
+    grid-template-columns: 1fr;
+  }
+}
+.banner-large {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-bottom: 3rem;
+}
+.banner-large img {
+  filter: brightness(50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 100%;
+}
+.banner-large .banner-text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.banner-large .banner-text .align-right {
+  text-align: right;
+}
+
+.banner-medium {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-bottom: 3rem;
+}
+.banner-medium img {
+  filter: brightness(50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 100%;
+}
+.banner-medium .banner-text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* using bootstrap breakpoints
+https://getbootstrap.com/docs/5.2/layout/breakpoints/ */
+/* could be refactored to use a hamburger menu instead */
+.about-text {
+  margin-bottom: 6rem;
+}
+
+.quote {
+  width: 45%;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "client-image quote-text" "client-image quote-text";
+  gap: 1.375rem;
+  padding-bottom: 2.25rem;
+}
+
+.client-image {
+  grid-area: client-image;
+}
+
+.quote-text {
+  grid-area: quote-text;
+}
+.quote-text blockquote p {
+  padding-bottom: 1.25rem;
+  font-style: italic;
+}
+
+.quote-author {
+  text-align: right;
+  color: var(--brand-primary);
+}
+
+@media only screen and (max-width: 800px) {
+  .quote {
+    width: 100%;
+    grid-template-columns: 260px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "client-image" "quote-text";
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+    justify-content: center;
+  }
+}
+.tour-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.625rem;
+  margin-bottom: 1.8125rem;
+}
+
+.day {
+  padding-bottom: 4.375rem;
+}
+
+.outro {
+  padding: 80px 0 200px 0;
+  display: flex;
+  justify-content: center;
+}

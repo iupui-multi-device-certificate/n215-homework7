@@ -1,0 +1,53 @@
+/*  from bootstrap */
+/* prevents overlap issue have w/ fixed */
+.sticky-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+//TODO: need to theme so can have dark and light navbar
+$spacing-nav: calc((48 / $base-font-size-in-px) * 1rem);
+
+nav {
+  background-color: rgba($brand-light, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+  height: 90px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $brand-dark;
+
+  border-bottom: 1px solid;
+  margin-bottom: $spacing-nav;
+
+  // text-shadow: 1px 1px 1px black;
+  .logo {
+    font-size: 1.25rem;
+    padding-top: 30px;
+    border: solid thin;
+  }
+  .links {
+    color: $brand-primary;
+    a {
+      text-decoration: none;
+      font-size: 15px;
+      color: $brand-dark;
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint) {
+  nav {
+    text-align: center;
+    .logo {
+      display: none;
+    }
+    .links {
+      justify-content: center;
+    }
+  }
+}
