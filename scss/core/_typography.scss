@@ -1,5 +1,7 @@
 //fonts
 
+//tried to set up per https://www.smashingmagazine.com/2013/02/setting-weights-and-styles-at-font-face-declaration/
+
 // Regular, weight: 400
 @font-face {
   font-family: "Gill Sans";
@@ -32,6 +34,14 @@
   font-style: normal;
 }
 
+// light italic
+@font-face {
+  font-family: "Gill Sans";
+  src: url(fonts/gill-sans-light-italic.otf) format("otf");
+  font-weight: 300;
+  font-style: italic;
+}
+
 // downloaded via Adobe CC
 //transferred per https:github.com/echeno/adobe-font-extractor */
 @font-face {
@@ -45,7 +55,13 @@
 $body-font-family: "Gill Sans, sans-serif";
 $title-font-family: "Proxima Nova Extra Condensed Thin, sans-serif";
 
-//TODO: partial underline on header tags
+//related classes
+
+.gill-sans-italic-light {
+  font-family: $body-font-family;
+  font-weight: 100;
+  font-style: italic;
+}
 /*
   Methods found so far are rather hacky. Linear gradient probably best method, but need to look into this further.
 

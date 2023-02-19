@@ -1,12 +1,17 @@
 $spacing-image: calc((42 / $base-font-size-in-px) * 1rem);
 $spacing-text: calc((70 / $base-font-size-in-px) * 1rem);
 
-.tour {
-  .trip-plan-item {
-    padding-bottom: $spacing-text;
-  }
-}
+// .tour {
 
+// }
+
+.trip-plan-item {
+  padding-bottom: $spacing-text;
+}
+.body-text {
+  font-family: $body-font-family;
+  font-weight: 100;
+}
 //breaks when nest this
 //do not have time to figure out why
 .tour-images {
@@ -17,6 +22,7 @@ $spacing-text: calc((70 / $base-font-size-in-px) * 1rem);
   gap: $spacing-image;
   margin-bottom: calc((29 / $base-font-size-in-px) * 1rem);
 }
+
 //do not nest this, it is a separate section
 //except this makes page real long
 .outro {

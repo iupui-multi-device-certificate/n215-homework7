@@ -51,12 +51,24 @@ select {
   font-style: normal;
 }
 @font-face {
+  font-family: "Gill Sans";
+  src: url(fonts/gill-sans-light-italic.otf) format("otf");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
   font-family: "Proxima Nova Extra Condensed Thin";
   src: url(fonts/proxima-nova-extra-condensed-thin.otf) format("otf");
   font-weight: 100;
   font-style: normal;
 }
 /* typography */
+.gill-sans-italic-light {
+  font-family: "Gill Sans, sans-serif";
+  font-weight: 100;
+  font-style: italic;
+}
+
 /*
   Methods found so far are rather hacky. Linear gradient probably best method, but need to look into this further.
 
@@ -472,6 +484,8 @@ footer .social {
   width: 484px;
   height: 54px;
   text-align: center;
+  font-size: 20px;
+  margin-bottom: 46px;
 }
 
 .promos {
@@ -521,8 +535,13 @@ https://getbootstrap.com/docs/5.2/layout/breakpoints/ */
     gap: 0.5rem;
   }
 }
-.tour .trip-plan-item {
+.trip-plan-item {
   padding-bottom: 4.375rem;
+}
+
+.body-text {
+  font-family: "Gill Sans, sans-serif";
+  font-weight: 100;
 }
 
 .tour-images {
@@ -560,6 +579,7 @@ https://getbootstrap.com/docs/5.2/layout/breakpoints/ */
 }
 .wrapper-special-offers .offer .info p {
   margin-bottom: 52px;
+  font-weight: 100;
 }
 
 .blogs {

@@ -35,7 +35,9 @@ $spacing-nav: calc((48 / $base-font-size-in-px) * 1rem);
   margin-bottom: $spacing-nav;
 
   .logo {
-    font-size: 1.25rem;
+    //not sure I see issue with logo styling
+
+    font-size: 1.25rem; //20px
     padding-top: 30px;
     border: solid thin;
   }
