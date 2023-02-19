@@ -388,7 +388,7 @@ https://getbootstrap.com/docs/5.2/layout/breakpoints/ */
     gap: 0.5rem;
   }
 }
-.tour-images {
+.tour .tour-images {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -396,12 +396,10 @@ https://getbootstrap.com/docs/5.2/layout/breakpoints/ */
   gap: 2.625rem;
   margin-bottom: 1.8125rem;
 }
-
-.day {
+.tour .trip-plan-item {
   padding-bottom: 4.375rem;
 }
-
-.outro {
+.tour .outro {
   padding: 80px 0 200px 0;
   display: flex;
   justify-content: center;
