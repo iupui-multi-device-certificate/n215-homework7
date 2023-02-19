@@ -70,10 +70,20 @@ $base-font-size-in-px: 16;
 %title-shared {
   font-family: $title-font-family;
   margin-bottom: 2.375rem;
+  width: fit-content;
 }
 
 .title {
   @extend %title-shared;
+}
+
+// https://generatepress.com/forums/topic/how-can-i-draw-a-partial-line-under-text/
+.underline:after {
+  content: "";
+  display: block;
+  width: 72%;
+  height: 1px;
+  background-color: $brand-dark;
 }
 
 .upper {

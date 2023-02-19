@@ -62,6 +62,16 @@
 .tour-teaser figure figcaption .figure-title, .title {
   font-family: "Proxima Nova Extra Condensed Thin, sans-serif";
   margin-bottom: 2.375rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.underline:after {
+  content: "";
+  display: block;
+  width: 72%;
+  height: 1px;
+  background-color: #000;
 }
 
 .upper {
