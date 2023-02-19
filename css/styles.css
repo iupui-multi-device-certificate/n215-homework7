@@ -85,13 +85,16 @@ body {
   /* min-height: 100vh; */
 }
 
-.btn {
+.btn, .btn--round {
   background-color: #79addc;
   padding: 0.625rem 1.375rem;
-  border-radius: 1.25rem;
+  border: none;
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
+}
+.btn--round {
+  border-radius: 1.25rem;
 }
 
 footer {
