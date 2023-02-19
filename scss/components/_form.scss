@@ -44,7 +44,6 @@
 }
 
 .wrapper-booking {
-  // width: 818px;
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -57,13 +56,13 @@
     height: 60px;
     margin-bottom: 20px;
     border: thin $brand-primary solid;
-    // padding: 20px;
     background-color: transparent;
   }
 
   .form-element {
     @extend %form-element-shared;
     width: 344px;
+    padding: 21px;
   }
 
   .form-element-small {
@@ -81,16 +80,25 @@
     width: 698px;
   }
 
-  // .name-email,
-  // .country-hotel {
-  //   flex-wrap: wrap;
-  // }
   .check-in,
   .check-out,
   .selections {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  // https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling
+  .select-wrapper {
+    position: relative;
+  }
+
+  .select-wrapper::after {
+    content: "▼";
+    font-size: 1rem;
+    top: 24px;
+    right: 10px;
+    position: absolute;
   }
 
   .message {
@@ -126,32 +134,5 @@
     .form-element-small {
       width: 15%;
     }
-    // .form-element-large,
-    // .form-element-x-large {
-    //   width: 100%;
-    // }
   }
 }
-
-// @media only screen (max-width: 618px) {
-//   .wrapper-booking {
-//     .booking-form {
-//       width: 100%;
-//     }
-
-//     .form-element-large,
-//     .form-element-x-large {
-//       width: 100%;
-//     }
-
-//     // .name-email, .country-hotel {
-//     //   display: flex;
-
-//     // }
-
-//     // .check-in,
-//     // .check-out,
-//     // .selections {
-//     // }
-//   }
-// }

@@ -56,6 +56,7 @@
               class="form-element form-element-large"
             />
           </div>
+          <!-- TODO: custom date picker icon, need to work in FF as well -->
           <div class="check-in">
             <label for="check-in">Check-in</label>
             <input
@@ -76,47 +77,54 @@
           </div>
           <div class="selections">
             <label for="adult">Adult</label>
-            <select
-              name="adult"
-              id="adult"
-              form="booking-form"
-              class="form-element form-element-small"
-            >
-              <optgroup>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-              </optgroup>
-            </select>
+            <div class="select-wrapper">
+              <select
+                name="adult"
+                id="adult"
+                form="booking-form"
+                class="form-element form-element-small"
+              >
+                <optgroup>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </optgroup>
+              </select>
+            </div>
             <label for="children">Children</label>
-            <select
-              name="children"
-              id="children"
-              form="booking-form"
-              class="form-element form-element-small"
-            >
-              <optgroup>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-              </optgroup>
-            </select>
+            <div class="select-wrapper">
+              <select
+                name="children"
+                id="children"
+                form="booking-form"
+                class="form-element form-element-small"
+              >
+                <optgroup>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </optgroup>
+              </select>
+            </div>
+
             <label for="rooms">Room</label>
-            <select
-              name="rooms"
-              id="rooms"
-              form="booking-form"
-              class="form-element form-element-small"
-            >
-              <optgroup>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-              </optgroup>
-            </select>
+            <div class="select-wrapper">
+              <select
+                name="rooms"
+                id="rooms"
+                form="booking-form"
+                class="form-element form-element-small"
+              >
+                <optgroup>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </optgroup>
+              </select>
+            </div>
           </div>
           <textarea
             name="message"

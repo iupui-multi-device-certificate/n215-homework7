@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* reset */
 *,
 *::before,
@@ -17,6 +18,12 @@ select,
 textarea {
   font-family: inherit;
   font-size: 100%;
+}
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 @font-face {
@@ -363,6 +370,7 @@ nav .links a {
 }
 .wrapper-booking .form-element {
   width: 344px;
+  padding: 21px;
 }
 .wrapper-booking .form-element-small {
   width: 103px;
@@ -379,6 +387,16 @@ nav .links a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.wrapper-booking .select-wrapper {
+  position: relative;
+}
+.wrapper-booking .select-wrapper::after {
+  content: "▼";
+  font-size: 1rem;
+  top: 24px;
+  right: 10px;
+  position: absolute;
 }
 .wrapper-booking .message {
   width: 100%;
