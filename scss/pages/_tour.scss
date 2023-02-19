@@ -2,20 +2,21 @@ $spacing-image: calc((42 / $base-font-size-in-px) * 1rem);
 $spacing-text: calc((70 / $base-font-size-in-px) * 1rem);
 
 .tour {
-  .tour-images {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: $spacing-image;
-    margin-bottom: calc((29 / $base-font-size-in-px) * 1rem);
-  }
-
   .trip-plan-item {
     padding-bottom: $spacing-text;
   }
 }
 
+//breaks when nest this
+//do not have time to figure out why
+.tour-images {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: $spacing-image;
+  margin-bottom: calc((29 / $base-font-size-in-px) * 1rem);
+}
 //do not nest this, it is a separate section
 //except this makes page real long
 .outro {

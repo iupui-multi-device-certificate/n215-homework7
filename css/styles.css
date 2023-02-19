@@ -521,16 +521,17 @@ https://getbootstrap.com/docs/5.2/layout/breakpoints/ */
     gap: 0.5rem;
   }
 }
-.tour .tour-images {
+.tour .trip-plan-item {
+  padding-bottom: 4.375rem;
+}
+
+.tour-images {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 2.625rem;
   margin-bottom: 1.8125rem;
-}
-.tour .trip-plan-item {
-  padding-bottom: 4.375rem;
 }
 
 .outro {
