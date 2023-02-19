@@ -50,7 +50,7 @@
   }
 }
 
-@media only screen and (max-width: $breakpoint) {
+@media only screen and (max-width: $breakpoint-lg) {
   .tour-teasers {
     grid-template-columns: 1fr;
   }

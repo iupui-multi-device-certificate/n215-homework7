@@ -47,7 +47,7 @@
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: $breakpoint-lg) {
   .wrapper-contact {
     flex-direction: column-reverse;
 
