@@ -425,3 +425,56 @@ https://getbootstrap.com/docs/5.2/layout/breakpoints/ */
 .wrapper-special-offers .offer .info p {
   margin-bottom: 52px;
 }
+
+.blogs {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.blogs .blog-post {
+  display: flex;
+  gap: 20px;
+}
+.blogs .blog-post .blog-date-block {
+  /* replace with SASS variables */
+  color: #fff;
+  background-color: #79addc;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.blogs .blog-post .blog-date-block .day {
+  font-size: 22px;
+  font-weight: 700;
+}
+.blogs .blog-post .blog-date-block .month {
+  font-size: 12px;
+}
+.blogs .blog-post .blog-content {
+  width: 95%;
+}
+.blogs .blog-post .blog-content .blog-image {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.blogs .blog-post .blog-content .blog-text {
+  max-width: 380px;
+}
+.blogs .blog-post .blog-content .blog-text .blog-title {
+  font-size: 15px;
+  margin-bottom: 11px;
+}
+.blogs .blog-post .blog-content .blog-text .blog-paragraph {
+  font-size: 13px;
+  color: #79addc;
+}
+
+/* breakpoint small */
+@media only screen and (max-width: 576px) {
+  .blog-post {
+    flex-direction: column;
+  }
+}
