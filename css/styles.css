@@ -347,22 +347,16 @@ https://getbootstrap.com/docs/5.2/layout/breakpoints/ */
 }
 
 .quote {
-  width: 45%;
-  display: grid;
-  grid-template-columns: 260px 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "client-image quote-text" "client-image quote-text";
+  width: 66%;
+  display: flex;
   gap: 1.375rem;
   padding-bottom: 2.25rem;
 }
 
 .client-image {
-  grid-area: client-image;
+  width: 260px;
 }
 
-.quote-text {
-  grid-area: quote-text;
-}
 .quote-text blockquote p {
   padding-bottom: 1.25rem;
   font-style: italic;
@@ -370,18 +364,16 @@ https://getbootstrap.com/docs/5.2/layout/breakpoints/ */
 
 .quote-author {
   text-align: right;
-  color: var(--brand-primary);
+  color: #79addc;
 }
 
 @media only screen and (max-width: 992px) {
   .quote {
     width: 100%;
-    grid-template-columns: 260px;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "client-image" "quote-text";
-    gap: 0.5rem;
-    padding-bottom: 0.5rem;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    gap: 0.5rem;
   }
 }
 .tour-images {
