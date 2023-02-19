@@ -7,6 +7,7 @@
   text-decoration: none;
   color: $brand-light;
   text-transform: uppercase;
+  font-size: 15px;
 
   &--round {
     @extend .btn;

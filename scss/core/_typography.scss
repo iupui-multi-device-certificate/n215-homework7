@@ -54,7 +54,7 @@ $title-font-family: "Proxima Nova Extra Condensed Thin, sans-serif";
 
 $base-font-size-in-px: 16;
 // use rem so scales with browser zoom (accessibility)
-//TODO: convert font-sizes or a generic sizing to mixin
+
 .font-size-80 {
   font-size: calc((60 / $base-font-size-in-px) * 1rem);
 }

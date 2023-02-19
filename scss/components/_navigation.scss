@@ -7,7 +7,16 @@
   z-index: 1020;
 }
 
-//TODO: need to theme so can have dark and light navbar
+//need fixed for the hero to work on home page
+//also from bootstrap
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
 $spacing-nav: calc((48 / $base-font-size-in-px) * 1rem);
 
 %navbar {

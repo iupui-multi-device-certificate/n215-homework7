@@ -121,6 +121,7 @@ body {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
+  font-size: 15px;
 }
 .btn--round {
   border-radius: 1.25rem;
@@ -176,6 +177,14 @@ footer .social {
   position: sticky;
   top: 0;
   z-index: 1020;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 
 .navbar {
@@ -445,6 +454,36 @@ footer .social {
     width: 15%;
   }
 }
+.hero {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/hero.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.hero .hero-cta {
+  color: #fff;
+  width: 484px;
+  height: 54px;
+  text-align: center;
+}
+
+.promos {
+  margin-top: -43px;
+  padding-bottom: 40px;
+}
+
+.inner-container {
+  max-width: 818px;
+  margin: 0 auto;
+}
+
 /* using bootstrap breakpoints
 https://getbootstrap.com/docs/5.2/layout/breakpoints/ */
 /* could be refactored to use a hamburger menu instead */
