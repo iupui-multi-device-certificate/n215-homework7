@@ -278,34 +278,57 @@ nav .links a {
   align-items: center;
 }
 
-.wrapper {
+.wrapper-contact {
+  max-width: 100%;
   display: flex;
   gap: 50px;
 }
-.wrapper .map {
-  margin-bottom: 34px;
+.wrapper-contact .location {
+  max-width: 100%;
 }
-.wrapper address {
+.wrapper-contact .location .map {
+  margin-bottom: 34px;
+  max-width: 100%;
+  height: 442px;
+}
+.wrapper-contact .location address {
   font-style: normal;
   font-size: 18px;
   font-weight: 100;
+  max-width: 100%;
+  height: 161px;
 }
-.wrapper .contact-form {
+.wrapper-contact .contact-form {
   display: flex;
   flex-direction: column;
   gap: 21px;
-  width: 50%;
+  width: 529px;
+  height: 560px;
 }
-.wrapper .contact-form .form-element {
+.wrapper-contact .contact-form .form-element {
   border: none;
   background-color: #f5f5f5;
   height: 60px;
   padding: 20px;
 }
-.wrapper .contact-form .message {
+.wrapper-contact .contact-form .message {
   height: 200px;
 }
+.wrapper-contact .contact-form .btn, .wrapper-contact .contact-form .btn--round {
+  width: 167px;
+}
 
+@media only screen and (max-width: 992px) {
+  .wrapper-contact {
+    flex-direction: column-reverse;
+  }
+  .wrapper-contact .location {
+    width: 100%;
+  }
+  .wrapper-contact .contact-form {
+    width: 100%;
+  }
+}
 /* using bootstrap breakpoints
 https://getbootstrap.com/docs/5.2/layout/breakpoints/ */
 /* could be refactored to use a hamburger menu instead */

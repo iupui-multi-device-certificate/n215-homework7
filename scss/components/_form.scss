@@ -1,23 +1,34 @@
-.wrapper {
+.wrapper-contact {
+  max-width: 100%;
   display: flex;
   gap: 50px;
 
   // flex-direction: column-reverse;
 
-  .map {
-    margin-bottom: 34px;
+  .location {
+    //set max-widths prevent horizontal scrolling in Firefox caused by image width otherwise image width of 400px
+    max-width: 100%;
+    .map {
+      margin-bottom: 34px;
+      max-width: 100%;
+      height: 442px;
+    }
+    address {
+      font-style: normal;
+      font-size: 18px; //convert to rem
+      font-weight: 100;
+      max-width: 100%;
+      height: 161px;
+    }
   }
-  address {
-    font-style: normal;
-    font-size: 18px; //convert to rem
-    font-weight: 100;
-  }
+
   .contact-form {
     display: flex;
     flex-direction: column;
     gap: 21px;
     //not sure if needs to be relative or absolute size?
-    width: 50%;
+    width: 529px;
+    height: 560px;
 
     .form-element {
       border: none;
@@ -29,9 +40,22 @@
     .message {
       height: 200px;
     }
+
+    .btn {
+      width: 167px;
+    }
   }
 }
 
-// @media screen only and (max-width: 800px) {
-//   flex-direction: column-reverse;
-// }
+@media only screen and (max-width: 992px) {
+  .wrapper-contact {
+    flex-direction: column-reverse;
+
+    .location {
+      width: 100%;
+    }
+    .contact-form {
+      width: 100%;
+    }
+  }
+}
