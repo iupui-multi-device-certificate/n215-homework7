@@ -14,10 +14,15 @@ $spacing-text: calc((70 / $base-font-size-in-px) * 1rem);
   .trip-plan-item {
     padding-bottom: $spacing-text;
   }
+}
 
-  .outro {
-    padding: 80px 0 200px 0;
-    display: flex;
-    justify-content: center;
-  }
+//do not nest this, it is a separate section
+//except this makes page real long
+.outro {
+  // padding: 80px 0 200px 0;
+  //take into account footer has margin top set at 200px;
+  padding: 80px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
