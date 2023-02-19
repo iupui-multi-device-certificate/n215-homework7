@@ -118,6 +118,15 @@ body {
 .btn--round {
   border-radius: 1.25rem;
 }
+.btn--small {
+  width: 133px;
+}
+.btn--medium {
+  width: 167px;
+}
+.btn--wide {
+  width: 100%;
+}
 
 footer {
   background-color: #79addc;
@@ -336,8 +345,45 @@ nav .links a {
 .wrapper-contact .contact-form .message {
   height: 200px;
 }
-.wrapper-contact .contact-form .btn, .wrapper-contact .contact-form .btn--round {
-  width: 167px;
+
+.wrapper-booking {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 21px;
+  font-size: 18px;
+}
+.wrapper-booking .form-element-x-large, .wrapper-booking .form-element-large, .wrapper-booking .form-element-small, .wrapper-booking .form-element {
+  height: 60px;
+  margin-bottom: 20px;
+  border: thin #79addc solid;
+  background-color: transparent;
+}
+.wrapper-booking .form-element {
+  width: 344px;
+}
+.wrapper-booking .form-element-small {
+  width: 103px;
+}
+.wrapper-booking .form-element-large {
+  width: 453px;
+}
+.wrapper-booking .form-element-x-large {
+  width: 698px;
+}
+.wrapper-booking .check-in,
+.wrapper-booking .check-out,
+.wrapper-booking .selections {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper-booking .message {
+  width: 100%;
+  height: 192px;
+  border: thin #79addc solid;
 }
 
 @media only screen and (max-width: 992px) {
@@ -349,6 +395,17 @@ nav .links a {
   }
   .wrapper-contact .contact-form {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .wrapper-booking .booking-form {
+    width: 100%;
+  }
+  .wrapper-booking .form-element {
+    width: 100%;
+  }
+  .wrapper-booking .form-element-small {
+    width: 15%;
   }
 }
 /* using bootstrap breakpoints

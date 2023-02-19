@@ -40,10 +40,63 @@
     .message {
       height: 200px;
     }
+  }
+}
 
-    .btn {
-      width: 167px;
-    }
+.wrapper-booking {
+  // width: 818px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 21px;
+
+  font-size: 18px;
+  %form-element-shared {
+    height: 60px;
+    margin-bottom: 20px;
+    border: thin $brand-primary solid;
+    // padding: 20px;
+    background-color: transparent;
+  }
+
+  .form-element {
+    @extend %form-element-shared;
+    width: 344px;
+  }
+
+  .form-element-small {
+    @extend %form-element-shared;
+    width: 103px;
+  }
+
+  .form-element-large {
+    @extend %form-element-shared;
+    width: 453px;
+  }
+
+  .form-element-x-large {
+    @extend %form-element-shared;
+    width: 698px;
+  }
+
+  // .name-email,
+  // .country-hotel {
+  //   flex-wrap: wrap;
+  // }
+  .check-in,
+  .check-out,
+  .selections {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .message {
+    width: 100%;
+    height: 192px;
+    border: thin $brand-primary solid;
   }
 }
 
@@ -59,3 +112,46 @@
     }
   }
 }
+
+@media only screen and (max-width: $breakpoint-md) {
+  .wrapper-booking {
+    .booking-form {
+      width: 100%;
+    }
+
+    .form-element {
+      width: 100%;
+    }
+
+    .form-element-small {
+      width: 15%;
+    }
+    // .form-element-large,
+    // .form-element-x-large {
+    //   width: 100%;
+    // }
+  }
+}
+
+// @media only screen (max-width: 618px) {
+//   .wrapper-booking {
+//     .booking-form {
+//       width: 100%;
+//     }
+
+//     .form-element-large,
+//     .form-element-x-large {
+//       width: 100%;
+//     }
+
+//     // .name-email, .country-hotel {
+//     //   display: flex;
+
+//     // }
+
+//     // .check-in,
+//     // .check-out,
+//     // .selections {
+//     // }
+//   }
+// }

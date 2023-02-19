@@ -12,4 +12,16 @@
     @extend .btn;
     border-radius: 1.25rem;
   }
+
+  &--small {
+    width: 133px;
+  }
+
+  &--medium {
+    width: 167px;
+  }
+
+  &--wide {
+    width: 100%;
+  }
 }
