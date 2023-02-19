@@ -178,8 +178,7 @@ footer .social {
   z-index: 1020;
 }
 
-nav {
-  background-color: rgba(255, 255, 255, 0.1);
+.navbar {
   margin-left: auto;
   margin-right: auto;
   height: 90px;
@@ -187,32 +186,46 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #000;
   border-bottom: 1px solid;
   margin-bottom: 3rem;
 }
-nav .logo {
+.navbar .logo {
   font-size: 1.25rem;
   padding-top: 30px;
   border: solid thin;
 }
-nav .links {
-  color: #79addc;
-}
-nav .links a {
+.navbar .links a {
   text-decoration: none;
   font-size: 15px;
+}
+
+.navbar--light-font {
+  color: #fff;
+}
+.navbar--light-font .links {
+  color: #79addc;
+}
+.navbar--light-font .links a {
+  color: #fff;
+}
+.navbar--dark-font {
+  color: #000;
+}
+.navbar--dark-font .links {
+  color: #79addc;
+}
+.navbar--dark-font .links a {
   color: #000;
 }
 
 @media only screen and (max-width: 992px) {
-  nav {
+  .navbar {
     text-align: center;
   }
-  nav .logo {
+  .navbar .logo {
     display: none;
   }
-  nav .links {
+  .navbar .links {
     justify-content: center;
   }
 }
