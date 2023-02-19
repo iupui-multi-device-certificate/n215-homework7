@@ -11,6 +11,14 @@
   skip setting html and body height for now
   my portfolio site is responsive and works fine without these set
 */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
 @font-face {
   font-family: "Gill Sans";
   src: url(fonts/gill-sans.otf) format("otf");
