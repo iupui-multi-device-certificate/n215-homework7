@@ -1,5 +1,5 @@
 #N215
 
-## Homework Three
+## Homework Seven
 
-https://in-info-web4.informatics.iupui.edu/~rahensle/n215/homework-six/tours.html
+https://in-info-web4.informatics.iupui.edu/~rahensle/n215/homework-seven
