@@ -140,6 +140,7 @@ body {
 }
 .btn--small {
   width: 133px;
+  white-space: nowrap;
 }
 .btn--medium {
   width: 167px;
@@ -486,6 +487,11 @@ footer .social {
   text-align: center;
   font-size: 20px;
   margin-bottom: 46px;
+}
+.hero .hero-button {
+  width: 121.62px;
+  height: 40.04px;
+  padding: 9px 20.3px 11px 19.3px;
 }
 
 .promos {
